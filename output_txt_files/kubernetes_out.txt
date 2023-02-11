@@ -1,1 +1,16 @@
-<paste log output from Kubernetes-mediated prediction, here>
+(.alxdevpro4) voclabs:~/environment $ bash run_kubernetes.sh
+Error from server (AlreadyExists): pods "alxdevpro4" already exists
+NAME         READY   STATUS    RESTARTS   AGE
+alxdevpro4   1/1     Running   0          109s
+Forwarding from 127.0.0.1:8000 -> 80
+Forwarding from [::1]:8000 -> 80
+Handling connection for 8000
+
+
+(.alxdevpro4) voclabs:~/environment $ bash make_prediction.sh
+Port: 8000
+{
+  "prediction": [
+    20.35373177134412
+  ]
+}
