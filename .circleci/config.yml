@@ -23,7 +23,8 @@ jobs:
             - run:
                 name: Install Sudo
                 command: |
-                    apt install sudo
+                    apt-get update
+                    apt-get install sudo
             - run:
                 name: install dependencies
                 command: |
